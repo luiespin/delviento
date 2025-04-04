@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Estilo custom -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Fontawesome (íconos) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <link rel="icon" href="../iconos_logos/favicon.png">
+    <title>Delviento</title>
+</head>
+
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="nosotros.html">nosotros</a>
+            <a href="productos.html">productos</a>
+            <a href="contacto.html">contacto</a>
+            <a href="dispreh.com.mx">dispreh</a>
+            <div class="iconos-menu">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="index.html" class="logo"></a>
+        <div class="topnav-right">
+            <a href="nosotros.html">nosotros</a>
+            <a href="productos.html">productos</a>
+            <a href="contacto.html">contacto</a>
+            <a href="dispreh.com.mx">dispreh</a>
+            <span class="iconos">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1.5x"></i>
+                </a>
+            </span>
+        </div>
+        <div class="btn-menu">
+            <img src="iconos_logos/menu.svg" alt="menu" onclick="openNav()" id="menu">
+        </div>
+    </div>
+
+    <div class="portada">
+        <p>vive <br> <span>el color</span></p>
+    </div>
+
+    <div class="seccion1">
+        <div class="texto1">
+            <p>
+                <b> En delviento&reg; nos preocupamos por tu bienestar y el de tu familia. Nuestra
+                    responsabilidad con nuestros clientes radica en las experiencias</b>,
+                buenos momentos y aventuras. <span>Nuesta misión: hacerte sentir cómodo y seguro
+                    en tu espacio favorito.</span>
+            </p>
+        </div>
+        <div class="texto2">
+            <p>
+                Por ello todos nuestros productos están fabricados con los más estrictos estándares de
+                calidad. Si eres fanático del color, te dedicas a construir o simplemente quieres, en
+                delviento&reg; tenemos la solución perfecta para ti.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="seccion2">
+        <div class="cubetas"></div>
+        <div class="brocha">
+            <p>
+                Clásico, minimalista, alegre o elegante. Lo que busques, nosotros lo tenemos. Todo está
+                a tu alcance.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- <div class="contenedor-imagenes">
+
+        <div class="imper">
+            <div class="enlaces">
+            <a href="impermeabilizantes.html" class="boton">IMPERMEABILIZANTES</a>
+            <div class="mas">+</div></div>
+        </div>
+
+        <div class="pinturas">
+            <a href="pinturas.html" class="boton">PINTURAS</a>
+            <div class="mas">+</div>
+        </div>
+
+        <div class="adhesivos">
+            <a href="adhesivos.html" class="boton">ADHESIVOS</a>
+            <div class="mas">+</div>
+        </div>
+        <div class="recubrimientos">
+            <a href="recubrimiento.html" class="boton"> RECUBRIMIENTOS</a>
+            <div class="mas">+</div>
+        </div>
+    </div> -->
+
+    <div class="imagenes">
+        <div class="imagen" id="pinturas">
+            <img src="imagenes_home/sillonXL.jpg" alt="pinturas" id="pintura">
+            <a href="pinturas.html" class="nombre">PINTURAS</a>
+            <a href="pinturas.html" class="mas">+</a>
+        </div>
+        <div class="imagen">
+            <img src="imagenes_home/zapatosXL.jpg" alt="">
+            <a href="adhesivos.html" class="nombre">ADHESIVOS</a>
+            <a href="adhesivos.html" class="mas">+</a>
+        </div>
+        <div class="imagen">
+            <img src="imagenes_home/gotasXL.jpg" alt="">
+            <a href="impermeabilizantes.html" class="nombre">IMPERMEABILIZANTES</a>
+            <a href="impermeabilizantes.html" class="mas">+</a>
+        </div>
+        <div class="imagen">
+            <img src="imagenes_home/textura.jpg" alt="">
+            <a href="recubrimiento.html" class="nombre">RECUBRIMIENTOS</a>
+            <a href="recubrimiento.html" class="mas">+</a>
+        </div>
+    </div>
+
+    <!--<div class="contenedor-botones">
+        <a href="#" class="boton">CONTACTO</a>
+        <a href="#" class="boton">PRODUCTOS</a>
+    </div> -->
+
+    <div class="dispreh">
+        <p>NUESTRA CALIDAD<br>NOS DISTINGUE</p>
+        <a href="dispreh.com.mx">CONOCE DISPREH</a>
+    </div>
+
+
+    <div class="seccion3">
+
+        <div class="pintor"></div>
+
+        <form action="/forma.php" class="formulario">
+
+            <div class="b">
+                <input type="text" name="nombre" placeholder="Nombre*">
+                <br>
+
+                <input type="text" name="apellido" placeholder="Apellido">
+                <br>
+
+                <input type="text" name="correo" id="" placeholder="Correo E.*">
+                <br>
+
+                <input type="text" name="telefono" id="" class="telefono" placeholder="Teléfono">
+                <br>
+                <br>
+
+            </div>
+            <div class="terms">
+                <img src="iconos_logos/gota.svg" alt="gota" id="gota">
+                <span>&nbsp;&nbsp;ACEPTO TÉRMINOS Y CONDICIONES
+                </span>
+            </div>
+            <div class="a">
+                <input type="submit" value="ENVIAR">
+            </div>
+        </form>
+    </div>
+
+    <div class="rodillo">
+        <img src="iconos_logos/logo-footer.png" alt="logo" id="logo-rodillo">
+    </div>
+
+    <footer class="footer-movil">
+        <div class="logo-blanco"></div>
+
+        <a href="">
+            <div class="diamante">
+                <i class="fas fa-angle-double-up arriba"></i>
+            </div>
+        </a>
+        <div>
+            <br>+771 153 0249
+            <br> CONTACTO@DELVIENTO.COM
+            <br> Copyright 2018 delviento. Todos los derechos reservados
+        </div>
+    </footer>
+
+    <footer class="footer-grande">
+        <div class="col-izquierda">
+            <a href="index.html">
+                <div class="logo-blanco"></div>
+            </a>
+            <p>
+                <a href="nosotros.html">NOSOTROS</a>
+                <br>
+                <a href="productos.html">PRODUCTOS</a>
+                <br>
+                <a href="dispreh.com.mx">DISPREH</a>
+                <br>
+                <a href="contacto.html"> CONTACTO </a>
+            </p>
+
+        </div>
+        <div class="col-centro">
+            <a href="">
+                <div class="diamante">
+                    <i class="fas fa-angle-double-up arriba"></i>
+                </div>
+            </a>
+            <div class="regresar"> REGRESAR A LA PARTE SUPERIOR
+            </div>
+            <div class="legal">COPYRIGHT 2018 DELVIENTO. TODOS LOS DERECHOS RESERVADOS.</div>
+        </div>
+
+        <div class="col-derecha">
+            <div class="contacto-footer">
+                <a href="tel:7712178116"> 771-217-8116</a>
+                <br>
+                <a href="terminos.html">POLÍTICA DE PRIVACIDAD</a>
+            </div>
+            <p id="ultimo"></p>
+<a href="estimadocliente.com.mx">DESARROLLADO POR ESTIMADO CLIENTE</a>
+        </div>
+
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
