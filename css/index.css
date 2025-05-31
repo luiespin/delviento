@@ -295,7 +295,7 @@ html, body {
   }
   .seccion2 .cubetas {
     flex: 55%;
-    background-image: url("../imagenes_home/cubetasXL.jpg");
+    background-image: url("../imagenes_home/cubetasXLv2.png");
     background-size: 50vw;
     background-position-x: right;
     background-repeat: no-repeat;
