@@ -200,7 +200,7 @@ html, body {
 }
 
 .portada {
-  background-image: url("../imagenes_home/portada.jpg");
+  background-image: url("../imagenes_home/portadav2.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   height: 146vw;
@@ -450,98 +450,82 @@ html, body {
   color: white;
 }
 
+/* SECCION3 - STORES SECTION */
 .seccion3 {
   display: flex;
+  font-family: gothamlight; /* Apply the font to the entire section */
 }
+
 .seccion3 .pintor {
   display: none;
 }
+
 @media only screen and (min-width: 700px) {
   .seccion3 .pintor {
     display: block;
-    flex: 50%;
+    flex: 65%; /* Take up 65% of the width */
     background-image: url("../imagenes_home/pintor.jpg");
     background-size: cover;
+    background-position: center; /* Center the image */
   }
 }
-.seccion3 .formulario {
-  flex: 100%;
-  margin-top: 3rem;
+
+.stores-container {
+  width: 100%; /* Take up the remaining width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent; /* Make background transparent */
+  border-radius: 8px;
+  color: #000000; /* Set text color */
+  flex: 35%; /* Take up 35% of the width */
+  text-align: left; /* Align text to the left */
 }
-@media only screen and (min-width: 700px) {
-  .seccion3 .formulario {
-    flex: 50%;
-  }
+
+.stores-container h2 {
+  color: #000000; /* Set heading color */
+  margin-bottom: 20px;
+  font-size: 24px; /* Adjust font size as needed */
 }
-.seccion3 .formulario input[type=text] {
-  letter-spacing: 3px;
-  width: 80%;
-  margin: 8px 0;
-  box-sizing: border-box;
+
+.stores-container h3 {
+    color: #000000; /* Set heading color to black */
+    margin-bottom: 10px;
+    font-size: 20px; /* Adjust font size as needed */
+    margin-left: 10px; /* Add some left margin for spacing */
+}
+
+.store {
+  display: flex;
+  align-items: center;
+  padding: 10px 0; /* Adjust padding */
+}
+
+.store-logo {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  margin-right: 20px;
+}
+
+.store-info {
+  text-align: left;
+}
+
+.store-info h3 {
+  margin-bottom: 5px;
+  color: #000000; /* Set store name color */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.store-info .address,
+.store-info .phone {
+  margin: 5px 0;
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.store-divider {
   border: none;
-  color: #d9dddf;
-  border-bottom: 1px solid #78797c;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-@media only screen and (min-width: 700px) {
-  .seccion3 .formulario input[type=text] {
-    margin: 4vw;
-  }
-}
-.seccion3 .formulario input[type=text] .telefono {
-  margin-bottom: 1.75rem;
-}
-.seccion3 .formulario input[type=submit] {
-  align-items: center;
-  align-content: center;
-  margin-top: 1rem;
-  font-size: 1rem;
-  /* margin-left: 35%; */
-  border: 1px solid;
-  border-color: #0071AE;
-  color: #0071AE;
-  background: transparent;
-  cursor: pointer;
-  font-family: gothamlight;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  transition: all 0.5s ease;
-  margin-bottom: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.seccion3 .formulario input[type=submit]:hover {
-  border-color: #76A9CC;
-  color: #808080;
-  background-color: #76A9CC;
-}
-.seccion3 .formulario .a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.seccion3 .formulario .b {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.seccion3 .formulario .terms {
-  font-family: gothamlight;
-  display: flex;
-  font-size: 12.37px;
-  text-align: center;
-  font-family: gothamlight;
-  align-items: center;
-  justify-content: center;
-  margin-top: -2rem;
-}
-.seccion3 .formulario .terms span {
-  font-family: gothamlight;
-}
-.seccion3 .formulario #gota {
-  height: 20px;
+  border-bottom: 1px solid #78797c; /* Set divider color */
+  margin: 10px 0;
 }
 
 .rodillo {
