@@ -277,11 +277,11 @@ i.fab:hover {
 }
 
 .contenedor {
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 @media only screen and (min-width: 900px) {
   .contenedor {
+    display: flex;
     flex-direction: row;
     margin-top: 5rem;
     margin-bottom: 3rem;
@@ -332,19 +332,32 @@ i.fab:hover {
 }
 
 .nuevo-texto {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
 }
+.nuevo-texto h4,
+.nuevo-texto .parrafo {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.nuevo-texto .imagen {
+  display: block;
+  width: 85vw;
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* Hide .nuevo-texto on desktop, adjust layout for desktop if needed */
 @media only screen and (min-width: 900px) {
   .nuevo-texto {
-    display: flex;
-    font-family: Raleway;
-  }
-  .nuevo-texto .izq {
-    flex: 40%;
-    margin-left: 5rem;
-  }
-  .nuevo-texto .der {
-    flex: 37%;
+    display: none;
   }
 }
 
@@ -443,6 +456,7 @@ i.fab:hover {
 .contenedor-botones .boton {
   text-decoration: none;
   transition: all 0.5s ease;
+  border-radius: 25px;
 }
 .contenedor-botones .boton:nth-child(1) {
   background-color: white;
