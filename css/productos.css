@@ -952,3 +952,32 @@ p#ultimo {
 }
 
 /*# sourceMappingURL=productos.css.map */
+
+@media only screen and (max-width: 899px) {
+  .seccion,
+  .seccion2,
+  .seccion3 {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .seccion .izquierda,
+  .seccion2 .izquierda,
+  .seccion3 .izquierda {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 0 18px 18px;
+    height: 55vw !important; /* <-- Add this line */
+    min-height: 180px;       /* Optional: ensures visibility on very small screens */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .seccion .derecha,
+  .seccion2 .derecha,
+  .seccion3 .derecha {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 1.5rem 1rem 2rem 1rem !important;
+  }
+}
