@@ -788,6 +788,9 @@ i.fab:hover {
     font-size: 16px;
   }
 }
+.boton, .unboton {
+  border-radius: 25px;
+}
 .contenedor-botones .boton {
   text-decoration: none;
   transition: all 0.5s ease;

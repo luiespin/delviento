@@ -277,21 +277,24 @@ i.fab:hover {
 }
 
 .contenedor {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
-@media only screen and (min-width: 900px) {
-  .contenedor {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  }
+.nuevo-texto {
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
 }
+
 .contenedor .imagen {
   flex: 100%;
   height: 56vw;
   background-size: cover;
   background-image: url("../imagenes_pinturas/bronce.jpg");
+  border-radius: 12px;
+  overflow: hidden;
 }
 @media only screen and (min-width: 700px) {
   .contenedor .imagen {
@@ -353,12 +356,6 @@ i.fab:hover {
   border-radius: 12px;
   box-sizing: border-box;
   overflow: hidden;
-}
-/* Hide .nuevo-texto on desktop, adjust layout for desktop if needed */
-@media only screen and (min-width: 900px) {
-  .nuevo-texto {
-    display: none;
-  }
 }
 
 #botonesL {

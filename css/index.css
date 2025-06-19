@@ -479,6 +479,9 @@ html, body {
   color: #000000; /* Set text color */
   flex: 35%; /* Take up 35% of the width */
   text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .stores-container h2 {
@@ -496,8 +499,31 @@ html, body {
 
 .store {
   display: flex;
-  align-items: center;
-  padding: 10px 0; /* Adjust padding */
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+}
+
+@media (min-width: 700px) {
+  .store {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .store-logo {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .store-info {
+    width: 100%;
+  }
+  .map-mini {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 1.5rem 0 0 0;
+  }
 }
 
 .store-logo {
@@ -675,6 +701,85 @@ p#ultimo {
 
   p#ultimo {
     padding-top: 50.5px;
+  }
+}
+
+.map-mini {
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+  margin: 1.5rem 0 0 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-mini iframe {
+  width: 100%;
+  height: 180px;
+  min-height: 180px;
+  max-height: 180px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 699px) {
+  .store {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .store-logo {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .store-info {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .map-mini {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenes > .imagen {
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    height: 66vw !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .imagenes > .imagen img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block;
+  }
+  .dispreh {
+    height: 66vw !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    background-size: cover !important;
+    background-position: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -243,8 +243,9 @@ h1 {
   }
 }
 .row1 {
-  height: 23rem;
   position: static;
+  display: flex;
+  align-items: flex-start;
 }
 
 /*Imagen y datos de contacto Create two unequal columns that floats next to each other */
@@ -317,7 +318,9 @@ h1 {
 
   .right {
     width: 100%;
-    height: 250px;
+    height: auto; /* Let it grow with content */
+    padding: 1.2rem 1rem 1.2rem 1rem; /* Add padding all around */
+    box-sizing: border-box;
   }
 
   .left {
@@ -334,16 +337,17 @@ h1 {
   }
 
   .right div {
-    padding-left: 35px;
+    padding-left: 0; /* Remove extra left padding */
+    padding-right: 0;
   }
 
   .right div:nth-child(1) {
-    padding-top: 50px;
-    padding-right: 61px;
+    padding-top: 0;
+    padding-right: 0;
   }
 
   .right div:last-child {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .right div:nth-child(3) {
@@ -457,6 +461,8 @@ h1 {
 /* Datos de Contacto Laptop y tablet grande */
 @media only screen and (min-width: 900px) {
   .row1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     height: 22rem;
   }
 
@@ -532,14 +538,13 @@ h1 {
 /* Telefono */
 @media screen and (max-width: 600px) {
   #sillas {
-    display: none;
-    visibility: hidden;
-    content: url("../imagenes_contacto/sillasS.jpg");
+    display: none !important;
+    visibility: hidden !important;
+    content: none !important;
   }
-
   #movil {
-    content: url("../imagenes_contacto/sillasS.jpg");
-    display: block;
+    display: none !important;
+    content: none !important;
   }
 }
 /* ****************** */
@@ -858,4 +863,53 @@ a i {
   }
 }
 
+hr.divider {
+  border: none;
+  border-top: 1.5px solid #ccc;
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 700px) {
+  hr.divider {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=contactos.css.map */
+.map-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.map-responsive {
+  width: 100%;
+  max-width: 45%;
+  position: relative;
+  padding-bottom: 35%; /* Less tall for desktop */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .map-row {
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .map-responsive {
+    max-width: 95vw;
+    padding-bottom: 45%; /* Less tall for mobile */
+    margin-top: 1.5rem;
+  }
+}
