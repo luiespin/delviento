@@ -689,8 +689,8 @@ p#ultimo {
     width: 100% !important;
     margin: 0 !important;
     border-radius: 0 0 18px 18px;
-    height: 55vw !important; /* <-- Add this line */
-    min-height: 180px;       /* Optional: ensures visibility on very small screens */
+    height: 55vw !important;
+    min-height: 180px;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -703,15 +703,16 @@ p#ultimo {
     margin: 0 !important;
     padding: 0 !important;
   }
-}
-
-@media only screen and (max-width: 899px) {
   .contenedor .caracteristicas p {
-    padding-left: 0.5em !important;
-    padding-right: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    padding-left: 1.2em !important;
+    padding-right: 1.2rem !important;
     text-align: justify !important;
     font-family: gothamlight !important;
     font-size: 1rem !important;
     margin-bottom: 1.5rem !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
   }
 }
