@@ -700,16 +700,18 @@ p#ultimo {
     align-items: center !important;
     text-align: center !important;
     padding: 1.5rem 1rem 2rem 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
 @media only screen and (max-width: 899px) {
   .contenedor .caracteristicas p {
-    padding-left: 0.2rem;
-    padding-right: 1.5rem;
-    text-align: justify;
-    font-family: gothamlight;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    padding-left: 0.5em !important;
+    padding-right: 1.5rem !important;
+    text-align: justify !important;
+    font-family: gothamlight !important;
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
   }
 }
