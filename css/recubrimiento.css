@@ -135,7 +135,7 @@
   background-color: #28324D;
   overflow-x: hidden;
   -webkit-transition: 1.5s;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 .overlay a {
   padding: 8px;
@@ -260,6 +260,7 @@ i.fab:hover {
   background-image: url("../imagenes_recubrimientos/textura.png");
   background-size: cover;
   height: 56vw;
+  min-height: 200px;
 }
 @media only screen and (min-width: 900px) {
   .seccion .izquierda {
@@ -345,22 +346,15 @@ i.fab:hover {
   margin: 2rem;
   font-family: gothamlight;
 }
-@media only screen and (min-width: 900px) {
-  .caracteristicas {
-    display: none;
-  }
-}
 
 .descripcionXL {
   margin: 1.5rem;
-  display: none;
   font-family: gothamlight;
+  text-align: justify;
 }
 @media only screen and (min-width: 900px) {
   .descripcionXL {
-    display: block;
     margin: 1.5rem 4.5rem 1.5rem 2.5rem;
-    text-align: justify;
   }
 }
 
@@ -370,6 +364,10 @@ i.fab:hover {
     flex-direction: column;
     flex: 25%;
   }
+}
+
+.boton, .unboton {
+  border-radius: 25px;
 }
 
 .contenedor-botones {

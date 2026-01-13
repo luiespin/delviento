@@ -135,7 +135,7 @@
   background-color: #28324D;
   overflow-x: hidden;
   -webkit-transition: 1.5s;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 .overlay a {
   padding: 8px;
@@ -257,15 +257,18 @@ i.fab:hover {
 }
 .seccion .izquierda {
   flex: 45%;
-  background-image: url("../imagenes_impermeabilizantes/imperS.jpg");
+  background-image: url("../imagenes_impermeabilizantes/imper.jpg");
   background-size: cover;
+  background-position: center;
   height: 56vw;
+  min-height: 200px;
 }
 @media only screen and (min-width: 900px) {
   .seccion .izquierda {
     margin: 3vw;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-image: url("../imagenes_impermeabilizantes/imper.jpg");
     height: 45vw;
   }
@@ -282,7 +285,7 @@ i.fab:hover {
   .seccion .derecha h3 {
     font-family: Raleway;
     display: block;
-    padding-top: 7vw;
+    padding-top: 2w;
     font-size: 25px;
     margin-left: 2.5rem;
     text-align: unset;
@@ -345,16 +348,11 @@ i.fab:hover {
   margin: 2rem;
   font-family: gothamlight;
 }
-@media only screen and (min-width: 900px) {
-  .caracteristicas {
-    display: none;
-  }
-}
 
 .descripcionXL {
   margin: 1.5rem;
-  display: none;
   font-family: gothamlight;
+  text-align: justify;
 }
 @media only screen and (min-width: 900px) {
   .descripcionXL {
@@ -370,6 +368,10 @@ i.fab:hover {
     flex-direction: column;
     flex: 25%;
   }
+}
+
+.contenedor-botones .boton {
+    border-radius: 25px;
 }
 
 .contenedor-botones {

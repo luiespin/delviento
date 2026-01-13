@@ -154,7 +154,7 @@ body {
   background-color: #28324D;
   overflow-x: hidden;
   -webkit-transition: 1.5s;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 .overlay a {
   padding: 8px;
@@ -243,8 +243,9 @@ h1 {
   }
 }
 .row1 {
-  height: 23rem;
   position: static;
+  display: flex;
+  align-items: flex-start;
 }
 
 /*Imagen y datos de contacto Create two unequal columns that floats next to each other */
@@ -294,6 +295,16 @@ h1 {
   color: black;
 }
 
+.divider {
+    border: none;
+    border-top: 2px solid #ccc; /* Light gray line */
+    margin: 20px 0; /* Space above and below the divider */
+    width: 80%; /* Optional: Adjust width */
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6; /* Optional: Slight transparency */
+}
+
 /* Datos de contacto */
 /* Datos de contacto Teléfono */
 @media only screen and (max-width: 600px) {
@@ -307,7 +318,9 @@ h1 {
 
   .right {
     width: 100%;
-    height: 250px;
+    height: auto; /* Let it grow with content */
+    padding: 1.2rem 1rem 1.2rem 1rem; /* Add padding all around */
+    box-sizing: border-box;
   }
 
   .left {
@@ -324,21 +337,20 @@ h1 {
   }
 
   .right div {
-    padding-left: 35px;
+    padding-left: 0; /* Remove extra left padding */
+    padding-right: 0;
   }
 
   .right div:nth-child(1) {
-    padding-top: 50px;
-    padding-right: 61px;
+    padding-top: 0;
+    padding-right: 0;
   }
 
   .right div:last-child {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 
-  .right div:nth-child(3) {
-    display: none;
-  }
+
 
   .column.right div a {
     font-size: 14px;
@@ -447,6 +459,8 @@ h1 {
 /* Datos de Contacto Laptop y tablet grande */
 @media only screen and (min-width: 900px) {
   .row1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     height: 22rem;
   }
 
@@ -522,14 +536,13 @@ h1 {
 /* Telefono */
 @media screen and (max-width: 600px) {
   #sillas {
-    display: none;
-    visibility: hidden;
-    content: url("../imagenes_contacto/sillasS.jpg");
+    display: none !important;
+    visibility: hidden !important;
+    content: none !important;
   }
-
   #movil {
-    content: url("../imagenes_contacto/sillasS.jpg");
-    display: block;
+    display: none !important;
+    content: none !important;
   }
 }
 /* ****************** */
@@ -848,4 +861,97 @@ a i {
   }
 }
 
+hr.divider {
+  border: none;
+  border-top: 1.5px solid #ccc;
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 700px) {
+  hr.divider {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=contactos.css.map */
+.map-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.map-responsive {
+  width: 100%;
+  max-width: 45%;
+  position: relative;
+  padding-bottom: 35%; /* Less tall for desktop */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .map-row {
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .map-responsive {
+    max-width: 95vw;
+    padding-bottom: 45%; /* Less tall for mobile */
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .row1 {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .column.left {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .column:not(.left):not(.right) {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .column.right {
+    order: 3 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .map-row {
+    order: 4 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .img-fluid {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 350px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+  }
+  .column.right div b {
+  margin-right: 0.5em;
+}
+}
+
+

@@ -135,7 +135,7 @@
   background-color: #28324D;
   overflow-x: hidden;
   -webkit-transition: 1.5s;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 .overlay a {
   padding: 8px;
@@ -278,20 +278,23 @@ i.fab:hover {
 
 .contenedor {
   display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.nuevo-texto {
+  display: flex;
   flex-direction: column;
+  font-family: Raleway;
 }
-@media only screen and (min-width: 900px) {
-  .contenedor {
-    flex-direction: row;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  }
-}
+
 .contenedor .imagen {
   flex: 100%;
   height: 56vw;
   background-size: cover;
   background-image: url("../imagenes_pinturas/bronce.jpg");
+  border-radius: 12px;
+  overflow: hidden;
 }
 @media only screen and (min-width: 700px) {
   .contenedor .imagen {
@@ -332,20 +335,27 @@ i.fab:hover {
 }
 
 .nuevo-texto {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
 }
-@media only screen and (min-width: 900px) {
-  .nuevo-texto {
-    display: flex;
-    font-family: Raleway;
-  }
-  .nuevo-texto .izq {
-    flex: 40%;
-    margin-left: 5rem;
-  }
-  .nuevo-texto .der {
-    flex: 37%;
-  }
+.nuevo-texto h4,
+.nuevo-texto .parrafo {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.nuevo-texto .imagen {
+  display: block;
+  width: 85vw;
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 #botonesL {
@@ -443,6 +453,7 @@ i.fab:hover {
 .contenedor-botones .boton {
   text-decoration: none;
   transition: all 0.5s ease;
+  border-radius: 25px;
 }
 .contenedor-botones .boton:nth-child(1) {
   background-color: white;
@@ -668,3 +679,40 @@ p#ultimo {
 }
 
 /*# sourceMappingURL=pinturas.css.map */
+
+@media only screen and (max-width: 899px) {
+  .contenedor {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .contenedor .imagen {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 0 18px 18px;
+    height: 55vw !important;
+    min-height: 180px;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .contenedor .texto {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 1.5rem 1rem 2rem 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .contenedor .caracteristicas p {
+    margin-top: 1.5rem !important;
+    padding-left: 1.2em !important;
+    padding-right: 1.2rem !important;
+    text-align: justify !important;
+    font-family: gothamlight !important;
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+  }
+}

@@ -135,7 +135,7 @@
   background-color: #28324D;
   overflow-x: hidden;
   -webkit-transition: 1.5s;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 .overlay a {
   padding: 8px;
@@ -367,7 +367,7 @@ i.fab:hover {
 }
 .seccion .derecha h3 {
   font-size: 16px;
-  font-family: Raleway;
+  font-family: Raleway !important;
   text-align: center;
   padding-top: 1rem;
 }
@@ -761,14 +761,12 @@ i.fab:hover {
 
 .descripcionXL {
   margin: 1.5rem;
-  display: none;
   font-family: gothamlight;
+  text-align: justify;
 }
 @media only screen and (min-width: 900px) {
   .descripcionXL {
-    display: block;
     margin: 1.5rem 4.5rem 1.5rem 2.5rem;
-    text-align: justify;
   }
 }
 
@@ -789,6 +787,9 @@ i.fab:hover {
   .contenedor-botones {
     font-size: 16px;
   }
+}
+.boton, .unboton {
+  border-radius: 25px;
 }
 .contenedor-botones .boton {
   text-decoration: none;
@@ -951,3 +952,32 @@ p#ultimo {
 }
 
 /*# sourceMappingURL=productos.css.map */
+
+@media only screen and (max-width: 899px) {
+  .seccion,
+  .seccion2,
+  .seccion3 {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .seccion .izquierda,
+  .seccion2 .izquierda,
+  .seccion3 .izquierda {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 0 18px 18px;
+    height: 55vw !important; /* <-- Add this line */
+    min-height: 180px;       /* Optional: ensures visibility on very small screens */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .seccion .derecha,
+  .seccion2 .derecha,
+  .seccion3 .derecha {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 1.5rem 1rem 2rem 1rem !important;
+  }
+}

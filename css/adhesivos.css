@@ -135,7 +135,7 @@
   background-color: #28324D;
   overflow-x: hidden;
   -webkit-transition: 1.5s;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 .overlay a {
   padding: 8px;
@@ -257,19 +257,23 @@ i.fab:hover {
 }
 .seccion .izquierda {
   flex: 45%;
-  background-image: url("../imagenes_adhesivos/pisoS.jpg");
+  background-image: url("../imagenes_adhesivos/piso.jpg");
   background-size: cover;
+  background-position: center;
   height: 56vw;
+  min-height: 200px;
 }
 @media only screen and (min-width: 900px) {
   .seccion .izquierda {
     margin: 3vw;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url("../imagenes_adhesivos/piso.jpg");
     height: 45vw;
   }
 }
+
 .seccion .derecha {
   flex: 55%;
   display: flex;
@@ -345,22 +349,15 @@ i.fab:hover {
   margin: 2rem;
   font-family: gothamlight;
 }
-@media only screen and (min-width: 900px) {
-  .caracteristicas {
-    display: none;
-  }
-}
 
 .descripcionXL {
   margin: 1.5rem;
-  display: none;
   font-family: gothamlight;
+  text-align: justify;
 }
 @media only screen and (min-width: 900px) {
   .descripcionXL {
-    display: block;
     margin: 1.5rem 4.5rem 1.5rem 2.5rem;
-    text-align: justify;
   }
 }
 
@@ -370,6 +367,10 @@ i.fab:hover {
     flex-direction: column;
     flex: 25%;
   }
+}
+
+.contenedor-botones .boton {
+    border-radius: 25px;
 }
 
 .contenedor-botones {
